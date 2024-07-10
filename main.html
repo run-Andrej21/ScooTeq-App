@@ -4,29 +4,51 @@
         <link rel="stylesheet" href="css.css">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="ScooTec3.png" />
     </head>
 
-    <body style="background-color:slategrey;">
+    <body style="background-color:rgb(20, 24, 87);">
         
-        <div class="inputbox">
-            <input required="required" type="text">
+     
+
+        <div class="result1" id="ResultID">
+          
+        </div>
+
+        <div class="videoDIV" id="videoDIVID">
+          <video autoplay muted class="video" id="videoID" style="background-color: white;">
+          <source src="14951489.mp4" type="video/mp4">
+          </video>
+        </div>
+      
+
+        <div class="inputbox" id="KilometerID">
+            <input required="required" type="text" id="KilometerInputID">
             <span>Kilometer</span>
             <i></i>
         </div>
 
-        <div class="inputbox">
-            <input required="required" type="text">
+        <div class="inputbox" id="MinutenID">
+            <input required="required" type="text" id="MinutenInputID">
             <span>Minuten</span>
             <i></i>
         </div>
 
-        <div class="inputbox">
-            <input required="required" type="text">
+        <div class="inputbox" id="BudgetID">
+            <input required="required" type="text" id="BudgetInputID">
             <span>Budget</span>
             <i></i>
         </div>
 
-    <div class="">
+        <button class="button">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"></path>
+          </svg>
+          <div class="text">
+            Button
+          </div>
+        </button>
+
         <div class="radio-input">
             <label class="label">
               <input
@@ -47,10 +69,9 @@
               <p class="text">Fahrstrecke für Budget</p>
             </label>
         </div>
-    </div>
+    
  
+    <script src="js.js"></script>
     </body>
+    
 </html> 
-
-
-<link href="js.js">

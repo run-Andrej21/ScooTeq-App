@@ -1,6 +1,40 @@
+.hidden{
+  display: none;
+}
+
+
+  .result1{
+    position:absolute;
+    border-radius: 4px;
+    font-size: 1em;
+    width: 196px;
+    height: 5%;
+    top: 45%;
+    left: 45%;
+    background: rgba(71, 127, 143, 0.137); /* Fallback background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .video{
+    position: absolute;
+    width: 20%;
+    height: 20%;
+    left: 40%;
+    top: 13%;
+    
+
+    background: #000; /* Fallback background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
 .inputbox {
     position: relative;
     width: 196px;
+    top: 35%;
+    left: 45%;
   }
   
   .inputbox input {
@@ -31,7 +65,7 @@
   
   .inputbox input:valid ~span,
   .inputbox input:focus ~span {
-    color: #45f3ff;
+    color: rgb(69, 243, 255);
     transform: translateX(-10px) translateY(-34px);
     font-size: 0,75em;
   }
@@ -56,15 +90,58 @@
 
 
 
+  .button {
+    background-color: #ffffff00;
+    position: absolute;
+    top: 36%;
+    left: 56%;
+    color: #fff;
+    width: 8.5em;
+    height: 2.9em;
+    border: #45f3ff 0.2em solid;
+    border-radius: 11px;
+    text-align: right;
+    transition: all 0.6s ease;
+  }
+  
+  .button:hover {
+    background-color: #3654ff;
+    cursor: pointer;
+  }
+  
+  .button svg {
+    width: 1.6em;
+    margin: -0.2em 0.8em 1em;
+    position: absolute;
+    display: flex;
+    transition: all 0.6s ease;
+    color: #45f3ff;
+  }
+  
+  .button:hover svg {
+    transform: translateX(5px);
+    color: #45f3ff;
+  }
+  
+  .text {
+    margin: 0 1.5em;
+    color: #45f3ff;
+  }
+
+
+
 
 
 .radio-input {
     display: flex;
     position: fixed;
     flex-direction: column;
+    background-color: rgba(71, 127, 143, 0.137);
+    padding: 2%;
+    border-radius: 20%;
     gap: 10px;
     top: 35%;
-    left: 2%;
+    left: 20%;
    
   }
   
@@ -105,15 +182,15 @@
   
   .radio-input .label:has(input:checked)::before {
     background-color: #2d3750;
-    border-color: #435dd8;
+    border-color: rgb(69, 243, 255);
     height: 50px;
   }
   .radio-input .label .text {
-    color: #fff;
+    color: #45f3ff;
   }
   
   .radio-input .label input[type="radio"] {
-    background-color: #202030;
+    background-color: #383855c2;
     appearance: none;
     width: 17px;
     height: 17px;
@@ -123,21 +200,12 @@
     align-items: center;
   }
   .radio-input .label input[type="radio"]:checked {
-    background-color: #435dd8;
+    background-color:rgb(69, 243, 255);
     -webkit-animation: puls 0.7s forwards;
     animation: pulse 0.7s forwards;
   }
   
-  .radio-input .label input[type="radio"]:before {
-    content: "";
-    width: 6px;
-    height: 6px;
-    border-radius: 50%;
-    transition: all 0.1s cubic-bezier(0.165, 0.84, 0.44, 1);
-    background-color: #fff;
-    transform: scale(0);
-  }
-  
+ 
   .radio-input .label input[type="radio"]:checked::before {
     transform: scale(1);
   }
@@ -155,18 +223,4 @@
   }
 
   
-
-
-
-
-
-
-.test {
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 98vh; /* Full height of the viewport */
-    
-}
 
