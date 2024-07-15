@@ -82,11 +82,11 @@ document.getElementById("BudgetInputID").addEventListener("keypress", function(e
         BUD_Kilometer = BUD_Value * 250 / 1000
         
         if(BUD_Minuten < 1){
-            document.getElementById("ResultID").textContent = "Budget zu klein"
+            document.getElementById("ResultID").innerHTML = "Budget zu klein"
             video.load()
             video.play()
         } else{
-            document.getElementById("ResultID").innerHTML = BUD_Minuten+" Minuten"+"<br>"+BUD_Kilometer+" Km"
+            document.getElementById("ResultID").innerHTML = BUD_Minuten.toFixed(2)+" Minuten"+"<br>"+BUD_Kilometer.toFixed(2)+" Km"
             video = document.getElementById("videoDIVID")
             video.load()
             video.play()
